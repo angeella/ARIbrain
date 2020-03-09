@@ -2,7 +2,7 @@
 #   
 
 
-summary_hommel_roi <- function(hommel,ix,alpha=0.05){
+summary_hommel_roi <- function(hommel,ix,alpha){
   Total=length(hommel@p[ix])
   False_Null=hommel::discoveries(hommel, alpha=alpha, ix=ix)
   True_Null=Total-False_Null
